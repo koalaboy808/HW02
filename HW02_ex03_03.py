@@ -15,7 +15,10 @@
 # Write your function below:
 # Body
 
-
+def right_justify(s):
+	name_length = len(s)
+	spaces = 70-name_length
+	print((spaces*" ") + s)
 
 
 

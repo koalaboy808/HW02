@@ -29,7 +29,21 @@
 # Write your functions below:
 # Body
 
+def print_twice(b):
+     print b
+     print b
 
+def do_twice(f, b):
+     f(b)
+     f(b)
+
+
+def do_four(f, b):
+	do_twice(f,b)
+	do_twice(f,b)
+
+#do_four(print_twice, 'spam')
+  
 
 
 
@@ -38,10 +52,10 @@
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have one function call in this function:
-    do_four([function object], [some_value])
-    """
+    #"""Call your functions within this function.
+    #When complete have one function call in this function:
+    do_four(print_twice, "spam")
+    #"""
     print("Hello World!")
     
 

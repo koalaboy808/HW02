@@ -8,6 +8,19 @@
 # Write your functions below:
 # Body
 
+#def print_hello():
+#	print "Hello World!"
+#	print "Bing Beep Boo"
+
+def do_n(f,n):
+	if n <= 0:
+		return
+	else:
+		f()
+		do_n(f,n-1)
+
+#do_n(print_hello, 2)
+
 
 
 
@@ -25,7 +38,7 @@ def main():
     When complete have one function call in this function:
     do_n(print_hello, 10)
     """
-    print_hello() # replace this with do_n(print_hello, 10)
+    do_n(print_hello, 10)
 
 
 

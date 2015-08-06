@@ -35,7 +35,51 @@
 # Write your functions below:
 # Body
 
+def plus_minus():
+	print "+ - - - - + - - - - +"
 
+def minus():   
+	print "|         |         |"
+
+def repeat_minus(f):
+	f()
+	f()
+	f()
+	f()
+
+def long_plus_minus():
+	print "+ - - - - + - - - - + - - - - + - - - - +"
+
+def long_minus():   
+	print "|         |         |         |         |"
+
+def long_repeat_minus(f):
+	f()
+	f()
+	f()
+	f()
+
+
+
+
+
+def two_by_two():
+	plus_minus()
+	repeat_minus(minus)
+	plus_minus()
+	repeat_minus(minus)
+	plus_minus()
+
+def four_by_four():
+	long_plus_minus()
+	long_repeat_minus(long_minus)
+	long_plus_minus()
+	long_repeat_minus(long_minus)
+	long_plus_minus()
+	long_repeat_minus(long_minus)
+	long_plus_minus()
+	long_repeat_minus(long_minus)
+	long_plus_minus()	
 
 
 
@@ -49,11 +93,10 @@
 # Write your functions above:
 ################################################################################
 def main():
-    """Call your functions within this function.
-    When complete have two function calls in this function:
+
     two_by_two()
     four_by_four()
-    """
+    
     print("Hello World!")
     
 
